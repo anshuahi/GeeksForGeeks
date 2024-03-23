@@ -1,3 +1,6 @@
+// ------- POTD ZigZag Tree Traversal ------
+// Question :  https://www.geeksforgeeks.org/problems/zigzag-tree-traversal/1
+
 #include <iostream>
 #include <queue>
 #include "tree.h"

@@ -1,6 +1,5 @@
-#include <iostream>
-#include <vector>
-
+// ------- Diagonal sum in binary tree ------
+// Question : https://www.geeksforgeeks.org/problems/diagonal-sum-in-binary-tree/1
 struct Node{
     int data;
     Node *left,*right;
