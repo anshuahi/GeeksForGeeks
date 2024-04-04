@@ -8,6 +8,20 @@ GitHub Solution Link- https://github.com/anshuahi/GeeksForGeeks/blob/master/Prob
 TimeComplexity: O(N)
 SpaceComplexity: O(N)
 
+Approach:
+s = “1234”
+dp[0] = 1 = 1
+dp[1] = 2 + 12  = 14
+dp[2] = 3 + 23  + 123 = 149
+dp[3] = 4 + 34  + 234 + 1234  = 1506
+Result = 1670
+Now we can get the relation between dp values and can solve the question iteratively. Each dp value can be represented in terms of previous value as shown below, For above example,
+dp[3] = 4 + 34 + 234 + 1234
+    = 4 + 30 + 4 + 230 + 4 + 1230 + 4
+    = 4*4 + 10*(3 + 23 +123)
+    = 4*4 + 10*(dp[2])
+In general, dp[i]  =  (i+1)*(s[i]-'0') + (10*dp[i-1]),  here (s[i]-'0') will convert s[i] character to its integer value.
+
 */
 
 class Solution
