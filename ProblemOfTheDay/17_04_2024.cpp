@@ -77,6 +77,8 @@ public:
         {
             v[i] = i * arr[i];
         }
+        CountInversionPairs cip = new CountInversionPairs(v);
+        return cip.countInversionPairs();
 
         return countInversionPairs(v);
     }
