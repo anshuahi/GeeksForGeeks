@@ -14,8 +14,7 @@ public:
     vector<int> FindExitPoint(int n, int m, vector<vector<int>> &matrix)
     {
         int i = 0, j = 0;
-        vector<vector<int>> dir = {
-            {0, 1}, {1, 0}, {0, -1}, {-1, 0}};
+        vector<vector<int>> dir = {{0, 1}, {1, 0}, {0, -1}, {-1, 0}};
         int currDir = 0;
         if (matrix[0][0] == 1)
         {
