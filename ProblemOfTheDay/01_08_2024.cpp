@@ -5,10 +5,11 @@ POTD Link: https://www.geeksforgeeks.org/problems/spirally-traversing-a-matrix-1
 
 Approach
 1. set left, right, top, bottom
-2. traverse j index from left to right, keeping i at top, at last increment top
-3. traverse i index from top to bottom, keeping j at right, at last decrement right
-4. traverse j index from right to left, keeping i at bottom, at last decrement top
-5. traverse i index from bottom to top, keeping j at left, at last increment left
+2. while top <= bottom && left <= right
+2.1 traverse j index from left to right, keeping i at top, at last increment top
+2.2 traverse i index from top to bottom, keeping j at right, at last decrement right
+2.3 traverse j index from right to left, keeping i at bottom, at last decrement top
+2.4 traverse i index from bottom to top, keeping j at left, at last increment left
 
 */
 
