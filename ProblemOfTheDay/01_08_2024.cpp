@@ -4,7 +4,11 @@ GeeksForGeeks-POTD: Spirally traversing a matrix
 POTD Link: https://www.geeksforgeeks.org/problems/spirally-traversing-a-matrix-1587115621/1
 
 Approach
-1. count the number of subsets whose sum is equal to (target-d)/2
+1. set left, right, top, bottom
+2. traverse j index from left to right, keeping i at top, at last increment top
+2. traverse i index from top to bottom, keeping j at right, at last decrement right
+2. traverse j index from right to left, keeping i at bottom, at last decrement top
+2. traverse i index from bottom to top, keeping j at left, at last increment left
 
 */
 
