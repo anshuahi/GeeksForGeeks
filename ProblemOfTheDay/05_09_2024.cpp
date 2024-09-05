@@ -1,3 +1,14 @@
+/*
+GeeksForGeeks-POTD: Missing in Array
+
+POTD Link: https://www.geeksforgeeks.org/problems/missing-number-in-array1416/1
+
+Approach
+1. find the sum of numbers from 1 to n
+2. find the array sum
+3. The missing number is sum - array_sum
+
+*/
 
 class Solution
 {
